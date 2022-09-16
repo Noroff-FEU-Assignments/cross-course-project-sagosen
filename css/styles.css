@@ -8,12 +8,10 @@ a {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 150px 1fr 150px;
     align-items: center;
     height: 80px;
-    position: top fixed;
-    margin-top: 0px;
-    padding-top: 0;
+    position: fixed;
 }
 
 .top-right {
@@ -51,7 +49,7 @@ input {
     top: 70px;
     align-self: center;
     height: 30px;
-    width: 100%;
+    width: 80%;
     display: flex;
 }
 
