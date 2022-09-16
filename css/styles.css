@@ -8,10 +8,12 @@ a {
 
 header {
     display: grid;
-    grid-template-columns: 150px 1fr 150px;
+    grid-template-columns: 1fr 5fr 1fr;
     align-items: center;
     height: 80px;
-    position: fixed;
+    position: top fixed;
+    margin-top: 0px;
+    padding-top: 0;
 }
 
 .top-right {
@@ -49,7 +51,7 @@ input {
     top: 70px;
     align-self: center;
     height: 30px;
-    width: 80%;
+    width: 100%;
     display: flex;
 }
 
@@ -140,24 +142,19 @@ footer {
 
 
 /*grid stuff, endre når du veit kva du skal ha her
-
 @media (orientation: portrait) {
     body {
         color:blue;
     }
 }
-
 @media (orientation: landscape) {
     body {color: green
     }
 }
-
 Layout rekkefølge:
 Header,
 Nav,
 Main,
 Footer
-
 Bruk flexbox med grid inni
-
 */
