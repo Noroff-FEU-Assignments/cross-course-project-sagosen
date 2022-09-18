@@ -1,7 +1,7 @@
 
 
 body {
-    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", "Lora" Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     margin: 0;
     align-items: center;
@@ -16,10 +16,6 @@ h2 {
     font-family: "Lora";
     font-size: 1.2em;
 }
-
-h3 {}
-
-
 
 a {
     text-decoration: none;
@@ -37,7 +33,6 @@ header {
     width: 100%;
     position: fixed;
     height: 80px;
-    background-color: white;
     align-items: center;
 }
 
@@ -46,7 +41,8 @@ header {
 }
 
 .top-left:hover {
-    filter: contrast(50%)
+    transition: all 1s ease;
+    filter: drop-shadow(0 0 5px black);
 
 }
 
@@ -70,7 +66,6 @@ header {
     display: flex;
     border: 1px solid black;
     border-radius: 25px;
-    
 }
 
 .searchbar input {
@@ -128,6 +123,11 @@ ul {
     padding: 4px;
     margin: 0;
     font-weight: bold;
+}
+
+ul a:hover {
+    transition: all 1s ease;
+    filter: drop-shadow(0 0 5px black);
 }
 
 
@@ -192,9 +192,11 @@ main {
     border-radius: 10px;
     margin: 20px 10px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-    padding: 0 15px 20px;
+    padding: 5px;
 }
 
+
+/* I meant to use the rulesets underneath but ran out of time.
 
 .boxart_under {
     display: flex;
@@ -203,12 +205,9 @@ main {
 
 .boxart_blurb {
     display: flex;
-}
+} 
 
-.boxart_blurb img {
-    width: 30px;
-    height: 30px;
-}
+*/
 
 .textbox {
     display: flex;
@@ -224,6 +223,8 @@ main {
 .textbox img {
     width: 100%;
     max-width: 1200px;
+    border-radius: 35px;
+    border: 1px solid;
 }
 
 
