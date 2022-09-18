@@ -1,3 +1,5 @@
+
+
 body {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -20,28 +22,18 @@ a {
 }
 
 a:hover {
-    color:white;
+    transition: all 0.1s ease;
+    filter: drop-shadow(0 0 15px darkgray);
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    margin-top: 0px;
-    padding-top: 0;
-    background-color: white;
-}
-
-.top-right {
     display: flex;
-    margin-left: 40px;
-}
-
-.top-right .icons {
-    width: 30px;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    background-color: white;
+    align-items: center;
 }
 
 .top-left {
@@ -49,7 +41,7 @@ header {
 }
 
 .top-left:hover {
-    filter: contrast(50)
+    filter: contrast(50%)
 
 }
 
@@ -59,17 +51,19 @@ header {
 
 .top-left-full:hover {
     filter: contrast(50);
-    transition: all 2s ease;
+    transition: all 1s ease;
+    filter: drop-shadow(0 0 5px black);
 
 }
 
 .searchbar {
     padding: 0 30px 0 30px;
+    margin: 30px;
     align-self: center;
     height: 30px;
     width: 100%;
     display: flex;
-    border: 1px solid;
+    border: 1px solid black;
     border-radius: 25px;
     
 }
@@ -97,24 +91,25 @@ button:hover {
 
 }
 
-
-/* input {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+.top-right {
+    display: flex;
+    margin-right: 10px;
 }
 
-.searchbar {
-    top: 70px;
-    align-self: center;
-    height: 30px;
-    width: 100%;
-    display: flex;
-    
-} */
+.top-right .icons {
+    width: 30px;
+}
+
+.icons:hover {
+    filter: brightness(200%);
+    filter: contrast(10%);
+    transition: all 1s ease;
+    filter: drop-shadow(0 0 5px black);
+}
 
 .consoles {
     Position: fixed;
+    height: auto;
     margin-top: 100px;
     width: 100%;
     align-self: top;
@@ -132,38 +127,48 @@ ul {
 
 
 main {
-    padding: 120px 0 80px 0;
-}
-
-.main-container {
     display: flex;
     justify-content: center;
-    height: 80vh;
+    padding: 120px 0 70px 0;
 }
 
-.main-content {
+.main_content {
+    display: flex;
     width: 80%;
     height: 100%;
     padding: 10px;
     margin: 10px;
-    background-color: #E2F3C9;
-    height: auto;
-    
-}
-
-.main-login {
-    background-image: url(/images/GameHub_Logo_pad.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    padding: 50px 0;
-}
-
-.grid-item {
-    padding: 0 20px 0 20px;
-    text-align: center;
     justify-content: center;
+    /* border: 1px solid; */
+    /* background-color: #C5D1D9;
+     */
+}
+
+.main_login {
+    align-items: center;
+    text-align: center;
+}
+
+.main_login img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.main_login fieldset {
+    background-color: lightblue;
+    font-weight: bolder;
+}
+
+.main_login a {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.main_login a:hover {
+    color: black;
+    transition: all 0.1s ease;
+    filter: drop-shadow(0 0 10px black);
+
 }
 
 footer {
@@ -174,7 +179,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 30px;
     border: 1px solid;
 }
 
@@ -189,40 +194,24 @@ footer a {
 @media only screen and (min-width: 600px) {
     .top-left {
         display: none;
-    }
-
-
-    
+    }    
 }
 
 @media only screen and (max-width: 600px) {
     .top-left-full {
         display: none;
     }
-/*     
-    .main-side {
-        width: 0px;
+    .top-right {
+        margin-left: none;
     }
-     */
-}
 
-
-
-
-/*grid stuff, endre når du veit kva du skal ha her
-@media (orientation: portrait) {
-    body {
-        color:blue;
+    .consoles ul {
+        flex-wrap: wrap;
+        gap: 10px;
     }
-}
-@media (orientation: landscape) {
-    body {color: green
+
+    .searchbar {
+        margin-right: 10px;
     }
+
 }
-Layout rekkefølge:
-Header,
-Nav,
-Main,
-Footer
-Bruk flexbox med grid inni
-*/

@@ -11,25 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
 </head>
 <body>
     <header>
         <div>
         <a class="top-left-full" href="index.html"><img src="images/GameHub_Logo_1.png" alt="Game_Hub_logo"
                 width="150px"></a>
-        <a class="top-left" href="index.html"><img src="images/gh_logo.png" alt="Game_Hub_logo" width="60px"></a>
+        <a class="top-left" href="index.html"><img src="images/gh_logo.png" alt="Game_Hub_logo" height="35px" width="50px"></a>
         </div>
-        <div class="grid-item">
-            <form class="searchbar">
-                <input type="text" placeholder="Search for games...">
-                <button type="submit"><img src="images/search.png" alt="search" width="20px" height="20px"></button>
-            </form>
-        </div>
+        <form class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="images/search.png" alt="search" width="15px" height="15px"></button>
+        </form>
         <div class="top-right">
-            <a href="index.html"> <img src="images/message.png" alt="chat" width="30px"> </a>
-            <a href="index.html"> <img src="images/cart 3.png" alt="cart" width="30px"> </a>
-            <a href="index.html"> <img src="images/account.png" alt="log_in" width="30px"> </a>
+            <a href="index.html"> <img class="icons" src="images/message.png" alt="chat"> </a>
+            <a href="index.html"> <img class="icons" src="images/cart 3.png" alt="cart"> </a>
+            <a href="index.html"> <img class="icons" src="images/account.png" alt="log_in"> </a>
         </div>
         <nav class="consoles">
             <ul>
@@ -42,8 +40,24 @@
             </ul>
         </nav>
     </header>
-    <main class="main-container">
-        <div class="main-content main-login">
+    <main>
+        <div class="main_content">
+            <div class="main_login">
+                <img src="/images/GameHub_Logo.png">
+                <div>
+                    <form action="blank.php" method="post">
+                        <fieldset>
+                            <legend>Log In</legend>
+                            <label for="email">Your email</label>
+                            <input type="email" placeholder="Enter Email" name="email" id="email" class="form__input" required>
+                            <label for="password">Password</label>
+                            <input type="text" placeholder="Your Password" name="password" id="password" class="form__input" required>
+                        <input type="submit" value="Log In">
+                        </fieldset>
+                    </form>
+                    <h1>Or <a href="#">register now</a> to sell your games</h1>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
